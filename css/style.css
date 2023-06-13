@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FAF9F6;
+}
+
+.Navbar{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+}
+
+.Navbar a{
+    text-decoration: none;
+    color: #A1273C;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    text-align: center;
+    padding: 25px;
+    font-size: 24px;
+    color: #A1273C;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 50px;
+}
+header section{
+    padding: 25px 200px;
+}
+h1{
+    padding: 25px;
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #AF9B46;
+    font-weight: 700;
+}
+
+header h2{
+    margin: 25px;
+    padding: 25px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #348AA7;
+    font-weight: 600;
+}
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+#about {
+    display: flex;
+    background-color: #A1273C;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    padding: 25px 200px;
+    font-size: 24px;
+    color: #FAF9F6;
+    font-family: 'Courier New', Courier, monospace;
+}
+#projects h2{
+    margin: 25px;
+    padding: 25px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #348AA7;
+    font-weight: 600;
+}
+
+#projects div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+#projects h3{
+    padding: 20px;
+    margin: 15px;
+    color: #A1273C;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#projects article{
+    width: 600px;
+    padding: 25px;
+    color: #AF9B46;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer {
+    background-color: #A1273C;
+    height: 100px;
+}
+.footer img{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+}
