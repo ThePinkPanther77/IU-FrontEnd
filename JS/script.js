@@ -8,7 +8,7 @@ fetch('https://fwd.innopolis.app/api/hw2?' + email.toString())
     .then(response => response.json())
     .then(Img => {
 
-        const date = new Date(Img.month, Img.day, Img.year)
+        const date = new Date(Img.day, Img.month - 1, Img.year)
 
         const imageElement = document.createElement('img')
         imageElement.src = Img.img
