@@ -112,8 +112,31 @@ h1{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.footer {
+#image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #AF9B46;
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px ;
     background-color: #A1273C;
+}
+
+#image img{
+    height: 600px;
+    width: 500px;
+    padding: 25px;
+}
+
+#image p{
+    font-size: 24px;
+    color:#348AA7;
+}
+
+.footer {
+    background-color: #FAF9F6;
     height: 100px;
 }
 .footer img{
