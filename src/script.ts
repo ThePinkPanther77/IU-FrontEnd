@@ -1,4 +1,8 @@
 import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
+import {Data} from './Data'
+
+dayjs.extend(relativeTime);
 
 const email = new URLSearchParams();
 email.append('email', 'h.sarhan@innopolis.university');
@@ -8,7 +12,7 @@ fetch('https://fwd.innopolis.app/api/hw2?' + email.toString())
   .then(data => {
     fetch('https://fwd.innopolis.university/api/comic?id=' + data)
       .then(response => response.json())
-      .then(Img => {
+      .then((Img: Data) => {
 
         const date = dayjs().set('year', Img.year).set('month', Img.month - 1).set('date', Img.day);
 
@@ -20,7 +24,7 @@ fetch('https://fwd.innopolis.app/api/hw2?' + email.toString())
         titleElement.textContent = Img.safe_title;
 
         const dateElement = document.createElement('p');
-        dateElement.textContent = date.format('DD-MM-YYYY');
+        dateElement.textContent = date.fromNow();
 
         const container = document.getElementById('image')!;
         container.appendChild(titleElement);
